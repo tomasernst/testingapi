@@ -96,6 +96,15 @@ const port = process.env.PORT || 3000;
 
 // GET endpoint to return all instances and support filtering by host.
 app.get('/api/v1/instances', (req: Request, res: Response) => {
+  // Print request details to console
+  console.log('Request received:', {
+    method: req.method,
+    url: req.url,
+    query: req.query,
+    headers: req.headers,
+    timestamp: new Date().toISOString()
+  });
+
   const hostFilter = req.query.host as string | undefined;
 
   // Filter instances if a host query is provided.
