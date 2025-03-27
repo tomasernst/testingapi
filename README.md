@@ -1,5 +1,7 @@
 # Galapagos Testing API
 
+API para probar el mecanismo de sincronización de Buk sin necesitar la API real de Galápagos.
+
 ## Requisitos
 
 - Node.js (version 12 o superior)
