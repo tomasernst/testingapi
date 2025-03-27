@@ -37,7 +37,7 @@ Retorna todas las instancias registradas.
 http://localhost:3000/api/v1/instances?host=tenant1.buk.cl
 ```
 
-### GET /api/v1/instances?host={tenant}
+### GET /api/v1/instances?host_address={tenant}
 Retorna las instancias filtradas por el valor del parámetro host.
 ```bash
 http://localhost:3000/api/v1/instances?host=tenant1.buk.cl
