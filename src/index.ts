@@ -105,7 +105,7 @@ app.get('/api/v1/instances', (req: Request, res: Response) => {
     timestamp: new Date().toISOString()
   });
 
-  const hostFilter = req.query.host as string | undefined;
+  const hostFilter = req.query.host_address as string | undefined;
 
   // Filter instances if a host query is provided.
   const filteredInstances = hostFilter
